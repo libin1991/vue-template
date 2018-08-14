@@ -21,7 +21,8 @@ export default new Router({
       component: () => import('./views/About.vue')//路由指定方式2
     },
     {
-      path: '/base:xxx=aaa',
+      path: '/base',
+        //path: '/base:xxx=aaa',
         //this.$route.params;这个对象包含了xxx的对象{xxx:'aaa'}
       name: 'base',
       component: () => import('./views/Base.vue')
